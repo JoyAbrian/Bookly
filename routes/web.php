@@ -7,5 +7,13 @@ Route::get('/', function () {
 });
 
 Route::get('/contact-us', function () {
-    return view('pages.auth.contactus');
+    return view('pages.contact-us');
+});
+
+Route::get('/register', function () {
+    return view('pages.auth.register');
+});
+
+Route::get('/login', function () {
+    return view('pages.auth.login');
 });

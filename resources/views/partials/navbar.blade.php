@@ -2,8 +2,13 @@
     <h1 class="font-Montserrat font-semibold text-2xl text-black justify-center">BOOKLY</h1>
     
     <div class="flex gap-10 font-Roboto items-center justify-start">
-        <a href="#" class="text-black text-base font-Roboto font-normal px-10 py-2 ">Contact Us</a>
-        <button class="bg-black text-white px-10 py-2 rounded-full hover:bg-gray-800 transition">Register</button>
-        <button class="bg-black text-white px-10 py-2 rounded-full hover:bg-gray-800 transition">Login</button>
+        <a href="/contact-us" class="text-black text-base font-Roboto font-normal px-10 py-2 ">Contact Us</a>
+        @if (Auth::check())
+            <a href="/dashboard" class="text-black text-base font-Roboto font-normal px-10 py-2 ">Dashboard</a>
+            <a href="/logout" class="text-black text-base font-Roboto font-normal px-10 py-2 ">Logout</a>
+        @else
+            <a href="/register" class="bg-black text-white px-10 py-2 rounded-full hover:bg-gray-800 transition">Register</a>
+            <a href="/login" class="bg-black text-white px-10 py-2 rounded-full hover:bg-gray-800 transition">Login</a>
+        @endif
     </div>
 </nav>
