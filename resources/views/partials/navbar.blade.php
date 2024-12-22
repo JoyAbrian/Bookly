@@ -1,5 +1,5 @@
 <nav class="w-full h-fit flex justify-center items-center py-3 px-8 gap-96 select-none bg-white border-b">
-    <h1 class="font-Montserrat font-semibold text-2xl text-black justify-center">BOOKLY</h1>
+    <img src="/images/logo.png" alt="Bookly Logo" class="h-10">
     
     <div class="flex gap-10 font-Roboto items-center justify-start">
         <a href="/contact-us" class="text-black text-base font-Roboto font-normal px-10 py-2 ">Contact Us</a>
